@@ -3,8 +3,11 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import { Inter } from "next/font/google";
+import {ThemeContextProvider} from "./context/ThemeContext"
+import ThemeProvider from './providers/ThemeProvider'
 
-
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Blog App",
@@ -18,16 +21,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className=''
-      >
-        <div className="container">
-          <div className="wrapper">
-            <Navbar/>
-            {children}
-            <Footer/>
+      <body className={inter.className}>
+        <ThemeContextProvider>
+          <ThemeProvider>
+            <div className="container">
+            <div className="wrapper">
+              <Navbar />
+              {children}
+              <Footer />
             </div>
-        </div>
+          </div>
+          </ThemeProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );
