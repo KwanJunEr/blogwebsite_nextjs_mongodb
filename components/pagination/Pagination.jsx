@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from "./navbar.module.css"
+import styles from "./pagination.module.css"
 
 const Navbar = () => {
   return (
     <div className={styles.container}>
-      Navbar
+      Pagination
     </div>
   )
 }
