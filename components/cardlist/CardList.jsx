@@ -12,6 +12,7 @@ const Navbar = () => {
         <Card/>
         <Card/>
         <Card/>
+        <Card/>
         
      </div>
       <Pagination/>

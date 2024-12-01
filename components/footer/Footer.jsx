@@ -4,7 +4,7 @@ import styles from "./footer.module.css"
 const Footer = () => {
   return (
     <div className={styles.container}>
-      Footer
+      Footerasdfasdasd
     </div>
   )
 }
