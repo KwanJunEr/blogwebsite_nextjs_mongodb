@@ -6,7 +6,7 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Populr Categories</h1>
+      <h1 className={styles.title}>Popular Categories</h1>
       <div className={styles.categories}>
         <Link
           href="/blog?cat=style"
