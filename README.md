@@ -1,3 +1,10 @@
+<h1>Notes</h1>
+
+React Quill - A powerful, feature-rich text editor for React Applications
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
